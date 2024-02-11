@@ -15,3 +15,11 @@
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
+@media screen and (max-width:600px){
+
+    .container_menu-title > h1 {
+        font-size: 30px;
+    }
+    
+}
