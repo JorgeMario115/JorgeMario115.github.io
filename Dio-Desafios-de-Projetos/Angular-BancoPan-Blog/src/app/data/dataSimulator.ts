@@ -1,18 +1,18 @@
 export const dataSimulator=[
     {
-        "id":1,
+        "id":"1",
         "photoCover":"",
         "title":"BLABLABLA-BLEEEE",
         "description":"olaaaa"
     },
     {
-        "id":2,
+        "id":"2",
         "photoCover":"",
         "title":"BLABLABLA-BLEEEE2222",
         "description":"olaaaa2222"
     },
     {
-        "id":3,
+        "id":"3",
         "photoCover":"",
         "title":"BLABLABLA-BLEEEE333",
         "description":"olaaaa333"

@@ -4,7 +4,7 @@ width: 700px;
 margin-bottom: 15px;
 }
 
-.small-card_photo > img {
+.small-card_photo > a > img {
     width: 200px;
     min-width: 200px;
     margin-right: 15px;
