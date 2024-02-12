@@ -15,9 +15,9 @@ export class ContentComponent implements OnInit {
   private id:string | null="0"
 
   @Input()
-  photoCover:string="assets/img/angular-versões-releases.png"
+  photoCover:string=""
   @Input()
-  contentTitle:string="NOVIDADES DO ANGULAR"
+  contentTitle:string=""
   @Input()
   contentDescription:string="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, non. Maiores adipisci similique veniam temporibus, culpa vero nesciunt sed ullam odit quisquam et eum non facere sequi. Aspernatur, explicabo quaerat. "
   
