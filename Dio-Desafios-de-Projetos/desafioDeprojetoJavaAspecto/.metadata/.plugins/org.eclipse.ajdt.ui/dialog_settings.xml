@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="AspectJProjectWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="206"/>
+		<item key="DIALOG_Y_ORIGIN" value="61"/>
+		<item key="DIALOG_WIDTH" value="1010"/>
+		<item key="DIALOG_HEIGHT" value="1009"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu Sans|11.0|0|GTK|1|"/>
+	</section>
+	<section name="NewAspectCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="657"/>
+		<item key="DIALOG_Y_ORIGIN" value="735"/>
+		<item key="DIALOG_WIDTH" value="668"/>
+		<item key="DIALOG_HEIGHT" value="804"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu Sans|11.0|0|GTK|1|"/>
+	</section>
+	<section name="NewAspectWizardPage">
+		<item key="create_main" value="false"/>
+		<item key="create_unimplemented_pc" value="true"/>
+		<item key="create_unimplemented_meth" value="true"/>
+	</section>
+</section>

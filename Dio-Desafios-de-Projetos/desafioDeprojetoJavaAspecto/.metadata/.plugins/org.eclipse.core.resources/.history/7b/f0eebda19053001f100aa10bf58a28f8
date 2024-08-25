@@ -1,0 +1,14 @@
+package desafioProjetoJavaAspecto;
+
+import banco.*;
+import java.util.Scanner;
+
+public class BancoApp {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Conta conta = null;
+
+	}
+
+}

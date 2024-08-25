@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+/home/jorge-mario-amd/Jorge/projetosDeCursos/projetosDio/cursoC_C++/desafioDeprojetoJavaAspecto/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2899393442.index
+1869019251.index
+1999208739.index

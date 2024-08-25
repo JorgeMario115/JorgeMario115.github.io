@@ -1,0 +1,82 @@
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none; /* Faz com que o vídeo não interfira na interação do jogo */
+}
+
+#video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); /* Centraliza o vídeo */
+    pointer-events: none; /* Faz com que o vídeo não interfira na interação do jogo */
+}
+
+
+
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Empilha os instrumentos verticalmente */
+    pointer-events: none; /* Permite que apenas o canvas capture os eventos */
+}
+
+.note {
+    position: absolute;
+    background-color: #f00; /* Cor temporária para as notas */
+    width: 50px;
+    height: 50px;
+}
+
+.instrument-field {
+    flex: 1;
+    border: 2px solid #000;
+    height: calc(100% / 7); /* Divide a altura do contêiner em 7 partes iguais */
+    margin-bottom: 2px; /* Espaçamento entre os campos */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semitransparente para os campos dos instrumentos */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remove as barras de rolagem */
+
+}
+
+/* Estilo para o canvas */
+ canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+} 
+#start-note {
+    flex: 1;
+    border: 2px solid #000;
+    height: 100px; /* Altura da nota */
+    background-color: rgba(0, 255, 0, 0.5); /* Cor de fundo semitransparente para a nota */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cursor de mão para indicar que é clicável */
+    z-index: 2; /* Garante que a nota fique acima do canvas */
+    color: #000; /* Cor do texto */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+

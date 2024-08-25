@@ -1,0 +1,29 @@
+package aspectos;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+
+@Aspect
+public aspect OperacoesBancariasAspect {
+    @Before("execution(* banco.Conta.depositar(..)) && args(valor)")
+    public void logAntesDeposito(double valor) {
+        System.out.println("[LOG] Iniciando depósito de: R$" + valor);
+    }
+
+    @Before("execution(* banco.Conta.sacar(..)) && args(valor)")
+    public void logAntesSaque(double valor) {
+        System.out.println("[LOG] Iniciando saque de: R$" + valor);
+    }
+
+    @AfterReturning(pointcut = "execution(* banco.Conta.getSaldo())", returning = "saldo")
+    public void logAposGetSaldo(double saldo) {
+        System.out.println("[LOG] Consulta de saldo realizada. Saldo atual: R$" + saldo);
+    }
+
+    @AfterThrowing("execution(* banco.Conta.sacar(..))")
+    public void logErroSaldoInsuficiente() {
+        System.out.println("[ERRO] Saldo insuficiente para realizar o saque.");
+    }
+
+}

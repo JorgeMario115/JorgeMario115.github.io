@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.instrument-field-container {
+    display: flex;
+    flex-wrap: nowrap; /* Garante que os campos não se movam para a linha de baixo */
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo da largura e altura */
+}
+
+.instrument-field {
+    flex: 1; /* Faz com que cada campo ocupe o mesmo espaço */
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Alinha os botões horizontalmente no centro do campo */
+    align-items: flex-end; /* Alinha os botões na parte inferior */
+    position: relative;
+    padding-bottom: 20px;
+    border-right: 2px solid blue; /* Linha azul para separar os campos */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo da largura e altura */
+}
+
+.fieldButton {
+    display: flex;
+    align-items: end;
+    height: 100vh;
+    position: relative; /* Necessário para posicionar as notas dentro deste elemento */
+    border-right: 2px solid grey
+
+}
+
+.instrument-field:last-child {
+    border-right: none; /* Remove a linha azul do último campo */
+}
+
+.field-button {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid white; /* Linha cinza clara para separar os botões */
+    cursor: pointer;
+    margin: 0 5px; /* Espaço entre os botões */
+}
+
+#startButton {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* Adicione no seu CSS */
+
+.fieldButton.active {
+    background-color: #004d00; /* Cor escura para indicar o botão pressionado */
+    box-shadow: 0 0 10px yellow; /* Efeito de brilho para o botão pressionado */
+}
+
+
+.note {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    /* Adiciona uma sombra para dar efeito visual às notas */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Estilo para o raio laser */
+.laser {
+    position: absolute;
+    width: 5px; /* Largura do laser */
+    background-color: yellow;
+    opacity: 0; /* Começa invisível */
+    pointer-events: none; /* Evita que o laser interfira com outros elementos */
+    transition: opacity 0.2s; /* Animação para mostrar e esconder o laser */
+    z-index: 10; /* Garante que o laser fique sobre as notas */
+}

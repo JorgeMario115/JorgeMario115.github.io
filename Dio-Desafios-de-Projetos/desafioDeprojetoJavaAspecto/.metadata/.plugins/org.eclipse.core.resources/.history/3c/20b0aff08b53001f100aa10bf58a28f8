@@ -1,0 +1,5 @@
+package desafioProjetoJavaAspecto;
+
+public abstract class Conta {
+
+}
